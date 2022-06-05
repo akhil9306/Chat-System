@@ -26,7 +26,7 @@ To install nodemon on the terminal we use
 and to run it we use 
  ``` node index.js ```
  
- # client
+ # Client
  The client has basic html, css and javascript interface which can be fetched from the server. This contains the chat applications.
  
  The html contains icons taken from https://fontawesome.com/ .
