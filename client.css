@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(73, 65, 65);
+    color: white;
+}
+
+.heading{
+    text-align: center;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 65vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.message{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+    margin: 17px 12px;
+}
+
+.right{
+    float: right;
+    clear: both;
+}
+
+.left{
+    float: left;
+    clear: both;
+}
+
+.middle{
+    margin: auto;
+    clear: both;
+}
+
+.send{
+    display: block;
+    margin: auto;
+    max-width: 1400px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+#send-container{
+    text-align: center;
+}
+
+.send-button{
+    cursor: pointer;
+    border: 2px solid rgb(73, 65, 65);
+    border-radius: 6px;
+    height: 34px;
+    width: 68px;
+    background-color: green;
+    color: blue;
+}
+
+#message-input{
+    width: 92%;
+    border: 2px solid rgb(73, 65, 65);
+    border-radius: 6px;
+    height: 34px;
+    background-color: rgb(89, 81, 81);
+    color: white;
+}
+
+.editor{
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px; 
+}
+
+.my-button-text{
+    cursor: pointer;
+    border: 2px solid grey;
+    border-radius: 6px;
+    height: 34px;
+    width: 34px;
+    background-color: rgb(73, 65, 65);
+    color: white;
+}
