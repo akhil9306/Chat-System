@@ -12,20 +12,26 @@ The server is created using node js  and the connection between the server and t
 6. The wizard will let you select components to include or remove from the installation. Again, unless you have a specific need, accept the defaults by clicking Next.
 7. Finally, click the Install button to run the installer. When it finishes, click Finish.
 
-Once installing is done we can check the version using on the treminal
+Once installing is done we can check the version using on the treminal<br>
  ``` npm -v ```
  
-To install socket.io we can use on the terminal
+To install socket.io we can use on the terminal<br>
 ``` npm install socket.io ```
 
 We also install additional library which is nodemon so that the server can restart automatically in cases we make any changes to the server code.
 
-To install nodemon on the terminal we use 
+To install nodemon on the terminal we use <br>
 ``` npm install -g nodemon ```
 
-and to run it we use 
- ``` node index.js ```
- 
+and to run it we use <br>
+ ``` nodemon index.js ```
+
+If the server only allows a set of addresses to get connected which does not include the client address to get connected.
+Then we need to install cors and mention possible client addresses for the server to connect.
+
+To install cors we use <br>
+``` npm install cors ```
+
  # Client
  The client has basic html, css and javascript interface which can be fetched from the server. This contains the chat applications.
  
