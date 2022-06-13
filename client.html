@@ -9,6 +9,7 @@
     <script defer src="client.js"></script>
     <link rel="stylesheet" href="client.css">
     <script src="https://kit.fontawesome.com/8a2f8e075a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
 </head>
 <body>
     <div>
@@ -28,7 +29,7 @@
             <button class="my-button-text" data-cmd="showCode" name="active"><i class="fa-solid fa-code"></i></button>
         </div>
         <form id="send-container" action="#">
-            <input id="message-input" type="text" name="message">
+            <iframe id="message-input" src="about: blank" name="messageName"></iframe>
             <button class="send-button" type="submit"><i class="fa-solid fa-paper-plane-top"></i></button>
         </form>
         <div class="editor">
