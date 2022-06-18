@@ -17,7 +17,7 @@ const user_name = prompt("Enter Your Name to join the live chat");
 socket.emit('new-user-joined',user_name);
 
 socket.on('user-joined',name => {
-    append(`${name} has joined the chat`,'middle');  
+    append(`${name} has joined the chat`,'middle');
 });
 
 socket.on('recieve',data => {
