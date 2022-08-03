@@ -5,6 +5,10 @@ const messageInput = document.getElementById("message-input");
 const messageContainer = document.querySelector(".container");
 const buttons = document.querySelectorAll(".my-button-text");
 
+const iDocument = messageInput.contentWindow.document;
+
+iDocument.body.style.color = "white";
+
 const append = (message, position)=> {
     const messageElement = document.createElement('div');
     messageElement.innerHTML = message;
@@ -44,18 +48,16 @@ buttons.forEach( button => {
     button.addEventListener('click', () => {
         console.log("working");
         let command = button.getAttribute('data-cmd');
-        if(command === "createLink" || command === "addFile") {
+        if(command === "createLink") {
             let url = prompt("Enter link here : ");
             messageName.document.execCommand("createLink",false,url);
         }
         else if(command === "addAt") {
             let person = prompt("Enter the persons name : ");
-            let iDocument = messageInput.contentWindow.document.body;
-            iDocument.appendChild(`<p>@ ${person}</p>`);
+            iDocument.body.innerHTML = iDocument.body.innerHTML + "@" +person;
         }
-        else if(command === "addEmoji") {
-            let iDocument = messageInput.contentWindow.document.body;
-            iDocument.appendChild("<p>&#128516</p>");
+        else if(command === "addSmilie") {
+            iDocument.body.innerHTML = iDocument.body.innerHTML + "<div>&#128512;</div>";
         }
         else {
             messageName.document.execCommand(command,false,null);

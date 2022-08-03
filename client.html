@@ -8,7 +8,7 @@
     <script defer src="http://localhost:8080/socket.io/socket.io.js"></script>
     <script defer src="client.js"></script>
     <link rel="stylesheet" href="client.css">
-    <script src="https://kit.fontawesome.com/8a2f8e075a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <meta charset="UTF-8">
 </head>
 <body>
@@ -25,16 +25,13 @@
             <button class="my-button-text" data-cmd="createLink"><i class="fa-solid fa-link"></i></button>
             <button class="my-button-text" data-cmd="insertUnorderedList"><i class="fa-solid fa-list-ul"></i></button>
             <button class="my-button-text" data-cmd="insertOrderedList"><i class="fa-solid fa-list-ol"></i></button>
-            <button class="my-button-text" data-cmd="blockquote"><i class="fa-solid fa-block-quote"></i></button>
-            <button class="my-button-text" data-cmd="showCode" name="active"><i class="fa-solid fa-code"></i></button>
         </div>
         <form id="send-container" action="#">
             <iframe id="message-input" src="about: blank" name="messageName"></iframe>
-            <button class="send-button" type="submit"><i class="fa-solid fa-paper-plane-top"></i></button>
+            <button class="send-button" type="submit"><b>Send</b></button>
         </form>
         <div class="editor">
-            <button class="my-button-text" data-cmd="addFile"><i class="fa-solid fa-plus"></i></button>
-            <button class="my-button-text" data-cmd="addEmoji"><i class="fa-solid fa-face-smile"></i></button>
+            <button class="my-button-text" data-cmd="addSmilie"><i class="fa-solid fa-face-smile"></i></button>
             <button class="my-button-text" data-cmd="addAt"><i class="fa-solid fa-at"></i></button>
         </div>
     </div>
